@@ -21,16 +21,13 @@
         </p>
         <div class="row row-cols-3">
             <div id="usuarios" class="container-fluid col" v-for="item in lista">
-                <!-- <div class=""> -->
                 <div class="card p-2 m-3">
-                    <!-- <img v-bind:src="{{avatar}}" alt="fotografia do usuário" class="cad-img-top"> -->
-                    <img src="https://reqres.in/img/faces/1-image.jpg" alt="...">
+                    <img v-bind:src="item.avatar" alt="fotografia do usuário" class="cad-img-top">
                     <div class="card-body">
                         <h2 class="card-title">{{item.first_name}} {{item.last_name}}</h2>
                         <p class="card-text">{{item.email}}</span></p>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
         </div>
     </div>
